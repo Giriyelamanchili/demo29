@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>has parameter</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>MAX_NUM</name>
+          <description></description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash
+makePyramid()
+{
+  #Here $1 is the parameter you passed with the function i,e 5
+  n=$1;
+
+  #outer loop is for printing number of rows in the pyramid
+  for((i=1;i&lt;=n;i++))
+  do
+
+      #This loop print spaces required
+      for((k=i;k&lt;=n;k++))
+      do
+        echo -ne &quot; &quot;;
+      done
+
+      #This loop print part1 of the the pyramid
+      for((j=1;j&lt;=i;j++))
+      do
+      echo -ne &quot;*&quot;;
+      done
+
+      #This loop print part 2 of the pryamid.
+      for((z=1;z&lt;i;z++))
+      do
+      echo -ne &quot;*&quot;;
+      done
+      
+      #This echo used for printing new line
+      echo;
+      
+      sleep 10
+  done
+}
+
+#calling function
+
+#change number according to your need
+makePyramid $MAX_NUM</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

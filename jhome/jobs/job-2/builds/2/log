@@ -1,0 +1,6 @@
+Started by user [8mha:////4I8sVriYrK+lmgE4m7VDvz6wQvFR9s+1tMFjTP4OZGXyAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /var/jenkins_home/jobs/job-2/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins4017591722813352804.sh
++ echo hello
+hello
+Finished: SUCCESS

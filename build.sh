@@ -1,1 +1,1 @@
-docker build --no-cache --rm=true -t with-plugin .
+docker build --no-cache --rm=true -t custom-jenkins .
