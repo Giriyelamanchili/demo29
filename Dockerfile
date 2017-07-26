@@ -24,4 +24,4 @@ COPY ./init.groovy /usr/share/jenkins/ref/init.groovy.d/init.groovy
 
 # download latest jenkins plugin
 
-RUN install-plugins.sh docker-slaves github-branch-source cloudbees-disk-usage-simple
+RUN install-plugins.sh docker-slaves github-branch-source cloudbees-disk-usage-simple monitoring
